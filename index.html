@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>AJAX - fetch</title>
+</head>
+<body>
+  <nav class="navbar navbar-custom">
+    <span class="navbar-brand">Know your Chuck Norris</span>
+  </nav>
+    
+  <div class="container get-container">
+    <section><h2>Generate a Chuck Norris fact</h2></section>
+    <p> There are 2 main methods to request info from the web to your page (fetch and AJAX).</p>
+    <p id="italic"> Below you will find a button for each one, choose the method you prefer.</p>
+    <div class="btn-container">
+      <button class="btn btn-outline-dark fetch-btn">Fetch</button>
+      <button class="btn btn-outline-dark ajax-btn">Ajax</button>
+    </div>
+      <section class="get-content"></section>
+    <p class="fetch-content"></p>
+    <p class="ajax-content"></p>
+  </div>
+
+  <div class="container post-container">
+    <p>Post content through:</p>
+    <input type="text" name="post" id="post-input">  
+    <section class="fetch-post"></section>
+    <section class="ajax-post"></section>
+  </div>
+  <script src="./fetch.js"></script>
+  <script src="./ajax.js"></script>
+</body>
+</html>
